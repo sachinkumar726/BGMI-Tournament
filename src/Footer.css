@@ -1,0 +1,29 @@
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #000000); /* Dark gradient */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px; /* Adjusted margin */
+    display: inline-block; /* Display links in a single line */
+  }
+  
+  footer p {
+    margin-top: 20px;
+  }
+  
+  /* Style for Font Awesome icons */
+  footer a i {
+    margin-right: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer a {
+      display: inline-block; /* Keep links in a single line on smaller screens */
+    }
+  }
+  
