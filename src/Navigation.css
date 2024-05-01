@@ -63,7 +63,10 @@ font-family:Arial, Helvetica, sans-serif;
   outline: none;
   border-color: #ff4500; /* Highlight border color on focus */
 }
-
+.search-icon {
+  color: #fff;
+  margin-left: 5px;
+}
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -101,4 +104,36 @@ font-family:Arial, Helvetica, sans-serif;
   to {
     transform: translateY(0);
   }
+  
 }
+
+
+.login{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .login {
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 14;
+    color: white; /* Change icon color to white */
+  }
+  .login a {
+    color: white; /* Change icon color to white */
+  }
+  .login-icon{
+    display: none;
+  }
+}
+
+.login-icon a {
+  color: white; /* Change icon color to white */
+  display: block;
+}
+
+
+

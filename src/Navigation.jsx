@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaUser } from 'react-icons/fa';
+import { FaBars, FaUser, FaSearch } from 'react-icons/fa'; // Import FaSearch
 
 import './Navigation.css';
 
@@ -33,10 +33,18 @@ const Navigation = () => {
         </li>
         
         <li>
-          <input type="text" placeholder="Search" className="search-input" />
+          <div className="search-box">
+            <input type="text" placeholder="Search" className="search-input" />
+            <FaSearch className="search-icon" /> {/* Add FaSearch icon */}
+          </div>
         </li>
-        <li><a href="/login"><FaUser /></a></li>
+        <div className="login-icon">
+        <a href="/login"><FaUser /></a>
+      </div>
       </ul>
+      <div className="login">
+        <a href="/login"><FaUser /></a>
+      </div>
     </nav>
   );
 };
